@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayisha  Nuha Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="script" href="script.js">
+</head>
+<body>
+<!-------------------------------------------------------NAV BAR  ----------------------------------------------------------->
+   <header class="nav-header">
+    <div class="nav-container">
+      <div class="logo">AN</div>
+      <nav>
+        <a href="active">Home</a>
+        <a href="about/about.html">About</a>
+        <a href="#">Experience</a>
+        <a href="projects/projects.html">Projects</a>
+        <a href="#">Blog</a>
+        <a href="contact us/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+<!----------------------------------------------------HERO SECTION ----------------------------------------------------------->
+  <main class="hero-section">
+    <div class="hero-content">
+      <h1>Hi, I'm Ayisha Nuha</h1>
+      <h2 id="changing-text">Software Developer</h2>
+       <p>
+        I’m a creative software developer who does more than just write code, I design, build, brand digital products that actually hits. Currently pursuing a Bachelor's degree in Computer Application at yenepoya university.
+      </p>
+      <div class="buttons">
+<button class="view-btn" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
+  View My Work
+</button>
+<a href="assets/AYISHA  NUHA-cv.pdf (1).pdf" download class="resume-btn">Upload Resume</a>
+      </div>
+<div class="icons">
+  <div class="icon-circle">
+    <img src="assets/images/github.png" alt="Web Icon" />
+  </div>
+  <div class="icon-circle">
+    <img src="assets/images/linkedin.png" alt="Work Icon" />
+  </div>
+  <div class="icon-circle">
+    <img src="assets/images/instagram.png" alt="Email Icon" />
+  </div>
+  <div class="icon-circle">
+    <img src="assets/images/mail.png" alt="Phone Icon" />
+  </div>
+</div>
+
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpg" alt="Profile Image" />
+    </div>
+  </main>
+
+<!----------------------------------------------------PROJECTS SECTION ----------------------------------------------------------->
+
+  <section class="projects-section" id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+  <p class="section-subtitle">Check out some of my recent work</p>
+
+  <div class="projects-grid">
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <img src="zenith-preview.jpg" alt="Zenith Preview" />
+      <h3>Zenith</h3>
+      <p>A decentralized music application enabling artists to mint and sell their music as NFTs.</p>
+      <div class="tags">
+        <span>Solidity</span><span>Polygon</span><span>Ethereum</span><span>IPFS</span><span>+6</span>
+      </div>
+      <ul>
+        <li>→ Built for 150+ artists to mint and sell NFTs with Solidity and IPFS</li>
+        <li>→ Enabled 300+ transactions and 30% faster monetization via Polygon</li>
+      </ul>
+      <button class="view-btn">View Details →</button>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card">
+      <img src="pokearena-preview.jpg" alt="PokeArena Preview" />
+      <h3>PokeArena</h3>
+      <p>A blockchain-based platform digitizing Pokémon cards as NFTs with secure trading and battling features.</p>
+      <div class="tags">
+        <span>Move</span><span>Aptos</span><span>NFTs</span><span>React</span><span>+7</span>
+      </div>
+      <ul>
+        <li>→ Developed a blockchain-based platform digitizing 300+ Pokémon cards as NFTs</li>
+        <li>→ Enabled secure trading and battling with on-chain verified ownership</li>
+      </ul>
+      <button class="view-btn">View Details →</button>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="project-card">
+      <img src="lightning-preview.jpg" alt="Lightning Time Preview" />
+      <h3>Lightning Time</h3>
+      <p>
+        A Bitcoin Lightning-powered time tracking app that lets users check in for work and auto-receive Satoshi payments.
+      </p>
+      <div class="tags">
+        <span>Bitcoin</span><span>Lightning Network</span><span>LNBits</span><span>Soulbound Tokens</span><span>+7</span>
+      </div>
+      <ul>
+        <li>→ Built real-time tracking with auto BTC payments via Lightning</li>
+        <li>→ Admin dashboard to monitor work time and payment stats</li>
+      </ul>
+      <button class="view-btn">View Details →</button>
+    </div>
+  </div>
+
+  <div class="view-all-btn">
+    <button>View All Projects</button>
+  </div>
+</section>
+
+
+<!----------------------------------------------------SKILLS SECTION ----------------------------------------------------------->
+
+<section class="skills-section">
+  <h2 class="skills-title">Technical Skills</h2>
+  <p class="skills-subtitle">My expertise across various technologies and tools</p>
+
+  <div class="tabs">
+    <button class="tab active" data-category="languages">Languages</button>
+    <button class="tab" data-category="frameworks">Frameworks/Libraries</button>
+    <button class="tab" data-category="ml">ML/Data</button>
+    <button class="tab" data-category="blockchain">Blockchain/Web3</button>
+    <button class="tab" data-category="cloud">Cloud/DevOps</button>
+    <button class="tab" data-category="concepts">Concepts</button>
+  </div>
+
+  <div class="skills-grid" id="skills-grid">
+    <!-- Skills dynamically injected here -->
+  </div>
+</section>
+
+
+
+
+  <section class="contact-section">
+    <h3>GET IN TOUCH</h3>
+    <h1>Contact <span>Me</span></h1>
+
+    <div class="contact-container">
+      <div class="contact-options">
+        <div class="contact-option">
+          <i class="fa fa-envelope"></i>
+          <span>avinashsingh9946@gmail.com</span>
+        </div>
+        <div class="contact-option">
+          <i class="fa fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </div>
+      </div>
+
+      <p class="or-text">Or send a message</p>
+
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+
+
+    <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>Achyut Katiyar</h3>
+        <p>
+          Full Stack Developer & Machine Learning Enthusiast based in Boston, 
+          specialized in creating modern web applications and blockchain solutions.
+        </p>
+      </div>
+
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section connect">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fas fa-user"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+          <a href="#"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section shortcuts">
+        <h4>Keyboard Shortcuts</h4>
+        <div class="shortcut"><kbd>⌘</kbd> + <kbd>K</kbd> <span>Search</span></div>
+        <div class="shortcut"><kbd>T</kbd> <span>Toggle theme</span></div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Achyut Katiyar. All rights reserved.</p>
+      <p>Built with <i class="fa-solid fa-heart"></i> using Next.js & Tailwind</p>
+    </div>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

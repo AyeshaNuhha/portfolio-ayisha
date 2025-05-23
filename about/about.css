@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top center, #2d2c52 0%, #05050a 100%);
+  color: #e5e7eb;
+}
+
+.nav-header {
+  background-color: transparent;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(5,5,10,0.8);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.header-glow {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  width: 600px;
+  height: 200px;
+  background: radial-gradient(circle, #8b5cf6 0%, transparent 80%);
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.about-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.about-header p {
+  color: #cbd5e1;
+  margin-top: 5px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.bio {
+  flex: 1 1 500px;
+}
+
+.skills {
+  flex: 1 1 500px;
+}
+
+.bio h2, .skills h2 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.bio p {
+  color: #cbd5e1;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.edu-card {
+  background-color: #1f2937;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.edu-card h3 {
+  margin: 0;
+  color: white;
+}
+
+.edu-card .school {
+  color: #9ca3af;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.edu-card .dates,
+.edu-card .location {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.skill-block {
+  margin-bottom: 25px;
+}
+
+.skill-block h3 {
+  margin-bottom: 10px;
+  color: #f3f4f6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background-color: #1f2937;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: #e0e0e0;
+}

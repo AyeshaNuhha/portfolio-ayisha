@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Achyut Katiyar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background: radial-gradient(ellipse at top, #2b0a57, #0e0e1a);
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="text-white font-sans">
+    <!-- Header -->
+    <header class="flex justify-between items-center px-8 py-5 bg-transparent">
+      <h1 class="text-xl font-bold">Achyut Katiyar</h1>
+      <nav class="space-x-6">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Experience</a>
+        <a href="#" class="hover:underline">Projects</a>
+        <a href="#" class="hover:underline">Blog</a>
+        <a href="#" class="bg-white text-black font-semibold px-4 py-2 rounded-lg">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="text-center mt-12 px-6">
+      <h2 class="text-4xl font-extrabold mb-2">Get In Touch</h2>
+      <p class="text-lg text-gray-300 mb-12">
+        Have a project in mind or want to collaborate? I'd love to hear from you!
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <!-- Left Form Card -->
+        <div class="bg-[#111827] p-8 rounded-xl shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Send me a message</h3>
+          <p class="text-sm text-gray-400 mb-6">
+            Fill out the form below and I’ll get back to you as soon as possible.
+          </p>
+
+          <form class="space-y-4">
+            <input
+              type="text"
+              placeholder="John Doe"
+              class="w-full bg-[#1f2937] text-white px-4 py-3 rounded-md focus:outline-none"
+            />
+            <input
+              type="email"
+              placeholder="john@example.com"
+              class="w-full bg-[#1f2937] text-white px-4 py-3 rounded-md focus:outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Project Inquiry"
+              class="w-full bg-[#1f2937] text-white px-4 py-3 rounded-md focus:outline-none"
+            />
+            <textarea
+              rows="4"
+              placeholder="I’d like to discuss a project opportunity..."
+              class="w-full bg-[#1f2937] text-white px-4 py-3 rounded-md focus:outline-none"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full bg-white text-black py-3 rounded-md font-bold hover:bg-gray-200 flex items-center justify-center gap-2"
+            >
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Contact Info Card -->
+        <div class="bg-[#111827] p-8 rounded-xl shadow-md space-y-6 text-left">
+          <h3 class="text-xl font-semibold">Connect with me</h3>
+          <p class="text-sm text-gray-400">
+            You can also reach out to me directly through these channels
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 bg-[#1f2937] p-4 rounded-md">
+              <i class="fab fa-github text-xl"></i>
+              <a href="#" class="text-sm">github.com/achyut21</a>
+            </div>
+            <div class="flex items-center gap-3 bg-[#1f2937] p-4 rounded-md">
+              <i class="fab fa-linkedin text-xl"></i>
+              <a href="#" class="text-sm">linkedin.com/in/achyutkatiyar2103/</a>
+            </div>
+            <div class="flex items-center gap-3 bg-[#1f2937] p-4 rounded-md">
+              <i class="fas fa-envelope text-xl"></i>
+              <span class="text-sm">achyutkatiyar21@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3 bg-[#1f2937] p-4 rounded-md">
+              <i class="fas fa-phone text-xl"></i>
+              <span class="text-sm">+18575766733</span>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-gray-700 text-sm text-gray-400">
+            <strong>Current Location</strong><br />
+            Boston, Massachusetts, USA
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

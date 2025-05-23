@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects</title>
+  <link rel="stylesheet" href="projects/projectstyle.css" />
+</head>
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-tag="all">All</button>
+      <button class="filter-btn" data-tag="solidity">Solidity</button>
+      <button class="filter-btn" data-tag="react">React</button>
+      <button class="filter-btn" data-tag="nextjs">Nextjs</button>
+      <button class="filter-btn" data-tag="polygon">Polygon</button>
+    </div>
+  </header>
+
+  <section class="project-container">
+    <div class="project-card" data-tags="solidity polygon ipfs ethereum">
+      <h3>Zenith</h3>
+      <p>Decentralized music app using Solidity, IPFS, Polygon</p>
+    </div>
+
+    <div class="project-card" data-tags="move aptos nfts react">
+      <h3>PokeArena</h3>
+      <p>Blockchain-based Pokémon card platform with NFTs</p>
+    </div>
+
+    <div class="project-card" data-tags="nextjs threejs tailwindcss typescript">
+      <h3>Infinitus24</h3>
+      <p>Event website built with Next.js and TailwindCSS</p>
+    </div>
+  </section>
+
+  <script src="projects.js"></script>
+</body>
+</html>

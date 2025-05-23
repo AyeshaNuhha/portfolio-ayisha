@@ -1,0 +1,573 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+/***********************************************     Navbar **********************************************************/
+
+.nav-header {
+  background-color: transparent;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(136, 136, 136, 0.311);
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 90%;
+  box-shadow: 0 0 15px #FAEFC3;
+
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ccc;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: 500;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+ color: #fff;
+  text-shadow: 0 0 8px #FAEFC3;
+}
+
+
+/***********************************************    Hero Section    **********************************************************/
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 85px;
+  background-size: cover;
+  background-position: center;
+}
+.hero-content {
+  flex: 1;
+  max-width: 55%;
+}
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.hero-content h2 {
+  font-size: 1.8rem;
+  margin: 10px 0 20px;
+  color: #ccc;
+}
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.view-btn, .resume-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.resume-btn {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #FAEFC3;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #FAEFC3; /* light grey */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.icon-circle:hover {
+  background-color: #2d2c2c;
+  transform: scale(1.1);
+}
+
+.icon-circle img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hero Image */
+.hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.hero-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 0 30px #FAEFC3;
+}
+
+
+#changing-text {
+  font-size: 2rem;
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #fff;
+  width: 0;
+  animation: typing 4s steps(30, end) forwards, blink 0.9s step-end infinite;
+  color: #fff; /* adjust based on your theme */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+/***************************************      Project Section       ***************************************/
+
+.projects-section {
+  padding: 220px 80px;
+  background: transparent;
+  text-align: center;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 8px #FAEFC3;
+}
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 60px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.project-card {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 12px #FAEFC3;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #FAEFC3;
+}
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #aaa;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.tags span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+.project-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.project-card ul li {
+  font-size: 0.95rem;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+.view-btn {
+  padding: 10px 20px;
+  background-color: #FAEFC3;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.view-all-btn {
+  margin-top: 40px;
+}
+.view-all-btn button {
+  padding: 12px 28px;
+  background-color: #121212;
+  border: 1px solid #aaa;
+  color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.view-all-btn button:hover {
+  background-color: #1f1f1f;
+}
+
+/***************************************      Skills Section       ***************************************/
+
+
+.skills-section {
+  padding: 100px 80px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 10px #FAEFC3;
+}
+
+.skills-subtitle {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 8px 16px;
+  background-color: #2a2d3e;
+  color: #ccc;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tab.active {
+  background-color: #3f3f4e;
+  color: white;
+  border: 1px solid #FAEFC3;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.skill-card {
+  background-color: #181a24;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 140px;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+  transition: transform 0.2s;
+}
+.skill-card img {
+  width: 20px;
+  height: 20px;
+}
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+
+/***************************************      Contact Section       ***************************************/
+
+.contact-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-section h3 {
+  font-weight: 500;
+  color: #ccc;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.contact-section h1 span {
+  background: #FAEFC3;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #222;
+  border-radius: 12px;
+  background-color: #111;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-option {
+  flex: 1 1 45%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-option i {
+  font-size: 1.2rem;
+}
+
+.or-text {
+  margin: 20px 0;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #444;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #a855f7;
+  border-color: #FAEFC3;
+}
+/**********************************************************   Footer Section  **********************************************************/
+
+
+.footer {
+  background-color: #000000;
+  padding: 50px 30px 20px;
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer h3,
+.footer h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #9ca3af;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  display: inline-block;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 50%;
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #FAEFC3;
+  color: white;
+}
+
+.shortcuts .shortcut {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+kbd {
+  background-color: #1f2937;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+  font-size: 0.85rem;
+}
+
+.footer-bottom i {
+  color: #f43f5e;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+#scrollTopBtn:hover {
+  background-color: #c084fc;
+  color: white;
+}

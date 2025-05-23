@@ -1,0 +1,45 @@
+body {
+  background: #0e0e1a;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.filter-buttons {
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #2d2d44;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.filter-btn.active {
+  background-color: #6f42c1;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  background: #1c1c2e;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
