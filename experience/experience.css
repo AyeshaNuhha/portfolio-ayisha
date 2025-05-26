@@ -1,0 +1,111 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: black;
+      color: white;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #bdbdbd;
+      margin-bottom: 2rem;
+    }
+
+    .filter-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .filter-buttons button.active {
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+    .filter-buttons button {
+      background-color: transparent;
+      border: 1px solid #aaa;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .filter-buttons button:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 600px;
+      border-left: 3px solid #FAEFC3;
+      position: relative;
+    }
+
+
+    .card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .card .location {
+      font-size: 0.9rem;
+      color: #bdbdbd;
+      margin-bottom: 1rem;
+    }
+
+    .card .date {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #FAEFC3;
+      color: #000000;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.75rem;
+      border-radius: 10px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+
+    .card ul li {
+      position: relative;
+      padding-left: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card ul li::before {
+      content: '➤';
+      position: absolute;
+      left: 0;
+      color: #FAEFC3;
+    }

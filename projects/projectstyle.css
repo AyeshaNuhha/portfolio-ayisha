@@ -1,45 +1,150 @@
 body {
-  background: #0e0e1a;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000000;
   color: white;
-  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.projects-section {
+  padding: 80px 20px;
   text-align: center;
-  padding: 2rem;
+  position: relative;
 }
 
-.filter-buttons {
-  margin-bottom: 2rem;
-}
 
-.filter-btn {
-  margin: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  background-color: #2d2d44;
-  color: white;
-  cursor: pointer;
-  border-radius: 6px;
+.heading {
+  font-size: 48px;
   font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 
-.filter-btn.active {
-  background-color: #6f42c1;
+.subheading {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 40px;
+  z-index: 1;
+  position: relative;
 }
 
-.project-container {
+.tech-tags {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  gap: 2rem;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-tags span {
+  background-color: #000101;
+  border: 1px solid#FAEFC3;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #cfd9f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tech-tags span:hover {
+  background-color: #FAEFC3;
+  color: black;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  justify-content: center;
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .project-card {
-  background: #1c1c2e;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  transition: 0.3s;
+   width: 350px;
+  background-color: #000000;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #FAEFC3;
+  display: flex;
+  flex-direction: column;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.project-tech span {
+  font-size: 11px;
+  background-color: #000000;
+  padding: 4px 10px;
+  border-radius: 14px;
+  color: #cfd9f0;
+}
+
+.project-features {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #b3c5de;
+}
+
+.project-features li {
+  margin-left: 18px;
+  margin-bottom: 4px;
+}
+
+.project-actions {
+  margin-top: auto;
+  padding: 0 20px 20px;
+}
+
+.project-actions button {
+  background-color: #ddd;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.project-actions button:hover {
+  background-color: #bbb;
+}
+
+.tech-tags span.active-tag {
+  background-color: #FAEFC3;
+  color: #000000;
+  border-color: #FAEFC3;
 }
